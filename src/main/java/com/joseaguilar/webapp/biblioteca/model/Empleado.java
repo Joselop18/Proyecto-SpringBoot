@@ -6,17 +6,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.ToString;
 
 @Entity
 @Data
-@ToString
-@Table(name = "Categorias")
-public class Categoria {
-
+@Table(name = "Empleados")
+public class Empleado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombreCategoria;
-    
+    private String nombreEmpleado;
+    private String apellidoEmpleado;
+    private String telefonoEmpleado;
+    private String direccionEmpleado;
+    private String dpi;
 }
