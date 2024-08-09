@@ -21,7 +21,7 @@ import com.joseaguilar.webapp.biblioteca.service.ClienteService;
 
 @Controller
 @RestController
-@RequestMapping("")
+@RequestMapping(value = "")
 
 public class ClienteController {
     @Autowired
